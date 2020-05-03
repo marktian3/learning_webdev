@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark Tian</title>
+</head>
+<body>
+
+  <h1>Mark Tian</h1>
+  <h2>Home Page</h2>
+
+  <p>Hello my name is <strong>Mark Tian</strong>, welcome to my in progress web page.</p>
+
+
+
+
+<!-- Horizontal Rule -->
+<hr>
+
+<form action="process.php"> <!--form is where the data is sent, such as a php file-->
+
+  <!-- text input -->
+  <div> <!--div separates different inputs-->
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" value="Jeff"> <!--id gives functionality to highlight form by pressing label, name attribute is for server side-->
+    <!--value attribute preffills form-->
+  </div>
+
+  <br>
+
+  <!-- text input -->
+  <div>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Enter an email"> <!--placeholder attribute for ghost text-->
+  </div>
+
+  <br>
+
+<!-- text box -->
+<div>
+  <label for="message">Message</label> 
+  <textarea name="message" id="message" cols="50" rows="5"></textarea> <!--text area-->
+</div>
+
+<!-- select options -->
+<div>
+  <label for="sex">Sex</label>
+  <select name="sex" id="sex">   <!--drop down list-->
+    <option value="male"Selected>M</option> <!--selected attribute preselects from  a list-->
+    <option value="female">F</option>
+    <option value="other">X</option>
+  </select>
+</div>
+
+<!--number-->
+<div>
+  <label for="age">Age</label> <br>
+  <input type="number" name="age" id="age">  <!--number field, only numerical entries allowed-->
+</div>
+
+<!--date-->
+<div>
+  <label for="birthdate">Birthdate</label>  <!--date-->
+  <input type="date" name="birthdate" id="birthdate">
+</div>
+
+<!--radio buttons-->
+<div>
+  <label for="membership">Membership</label>
+  <input type="radio" name="membership" id="membership" value="simple">Simple  <!--radio buttons for forms, note where the words Simple and Super are placed outside of the <>-->
+  <input type="radio" name="membership" id="membership" value="standard" checked>Standard <!--checked attribute preselects an option-->
+  <input type="radio" name="membership" id="membership" value="super">Super
+</div>
+
+<!--checkbox-->
+<div>
+  <label for="likes">I like...</label>
+  <input type="checkbox" name="likes" id="likes" value="apple">Apple  <!--checkbox buttons for forms, note where the words Simple and Super are placed outside of the <>-->
+  <input type="checkbox" name="likes" id="likes" value="strawberry" checked>Strawberry <!--checked attribute preselects an option-->
+  <input type="checkbox" name="likes" id="likes" value="banana">Banana
+</div>
+
+<!--two ways to get submit button-->
+<input type="submit" value="Submit1">
+<button type="submit">Submit2</button>
+
+<!--reset button-->
+<button type="reset">Reset</button>
+
+</form>
+
+</body>
+</html>

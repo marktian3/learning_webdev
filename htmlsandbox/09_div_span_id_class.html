@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div, span, id, and class</title>
+
+  <!--this is a style, not relevant to this specific section other than to show the difference between classes and ids-->
+<style>
+  .card{
+border: 1px solid #ccc;
+background: #f4f4f4;
+padding: 20px;
+margin-bottom: 10px;
+  }
+
+  .enhance {
+    color:yellow;
+    background-color:black
+  }
+</style>
+
+</head>
+<body>
+
+  <div id="main-header">
+    <h1>Mark's Website</h1>
+    <p>Welcome to my website :)</p>
+  </div>
+
+  <ul id=main-nav>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <!--this line can be made by just entering "#test", class added separately-->
+  <!--ids are unique whereas classes can be assigned to multiple things-->
+  <div id="test" class="card">
+  <h3>Test Heading</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ab reiciendis veritatis officia aliquam atque, id aperiam nesciunt beatae ad incidunt velit, recusandae voluptas, sit dolorum eos earum tenetur harum?</p>
+  </div>
+
+  <div id="contact" class="card">
+    <h3>Contact Me</h3>
+    <ul>
+      <li>Address: 123 Street</li>
+      <li>Phone: 123-9211</li>
+      <li>Email: thecooolkid@gmail.com</li>
+    </ul>
+  </div>
+
+  <!-- The main difference between div and span is that div is block level while span is inline level, so if you want to customize 
+  just a specific section then you would need to use span instead of div since div will push the customization into a new line -->
+  <div id="footer">
+    <p>Copyright <span class=enhance>2020</span></p>
+  </div>
+
+  
+
+</body>
+</html>
